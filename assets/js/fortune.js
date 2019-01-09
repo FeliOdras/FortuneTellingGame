@@ -25,7 +25,7 @@ const locationID = Math.floor(Math.random() * locations.length);
 const partnerID = Math.floor(Math.random() * partners.length);
 const livingID = Math.floor(Math.random() * living.length);
 
-let fortuneTelling3 = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${numOfChildren} children.`;
+let fortuneTelling3 = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${kids==0 ? 'no' : kids} ${kids==1 ? 'child' : 'children' } .`;
 
 console.log(fortuneTelling3(kids, partners[partnerID], locations[locationID], jobs[jobID], living[livingID], livingSize));
 
