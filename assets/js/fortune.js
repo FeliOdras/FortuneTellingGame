@@ -31,4 +31,4 @@ let tellFortune = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHous
 : numOfChildren==1 ? 'one child'
 : numOfChildren+' children'}.`;
 
-document.getElementById("schicksal").innerHTML = tellFortune(kids, partners[partnerID], locations[locationID], jobs[jobID], living[livingID], livingSize)
+document.getElementById("schicksal").innerHTML = tellFortune(kids, partners[partnerID], locations[locationID], jobs[jobID], living[livingID], livingSize);
