@@ -27,6 +27,8 @@ let locationID = randomize(locations);
 let partnerID = randomize(partners);
 let livingID = randomize(living);
 
-let tellFortune = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${numOfChildren==0 ? 'no' : numOfChildren} ${numOfChildren==1 ? 'child' : 'children' } .`;
+let tellFortune = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${numOfChildren===0 ? 'no children' 
+: numOfChildren==1 ? 'one child'
+: numOfChildren+' children'}.`;
 
 document.getElementById("schicksal").innerHTML = tellFortune(kids, partners[partnerID], locations[locationID], jobs[jobID], living[livingID], livingSize)
