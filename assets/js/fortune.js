@@ -13,14 +13,14 @@ console.log(fortuneTelling2(numOfChildren, yourPartner, geoLocation, jobTitle, k
 
 
 // randomized output through arrays
-let jobs = ['software developer', 'doctor', 'drug dealer', 'barkeeper', 'delivery boy', 'rockstar', 'archeologist', 'clown', 'martial arts trainer']
-let locations = ['Germany', 'Japan', 'Sweden', 'United States of America', 'China', 'Brasil', 'Egypt', 'every place in the world']
-let partners = ['a loving partner', 'a witch', 'a dragon', 'an aweful person', 'an alien', 'a god', 'a zombie', 'a hero']
+let jobs = ['software developer', 'doctor', 'drug dealer', 'barkeeper', 'delivery boy', 'rockstar', 'archeologist', 'clown', 'martial arts trainer'];
+let locations = ['Germany', 'Japan', 'Sweden', 'United States of America', 'China', 'Brasil', 'Egypt', 'every place in the world'];
+let partners = ['a loving partner', 'a witch', 'a dragon', 'an aweful person', 'an alien', 'a god', 'a zombie', 'a hero'];
 let kids = Math.floor(Math.random() * 10);
-let living = ['villa', 'condemonium', 'shack', 'cottage', 'cheap flat', 'box on the street', 'mansion', 'nice house']
+let living = ['villa', 'condemonium', 'shack', 'cottage', 'cheap flat', 'box on the street', 'mansion', 'nice house'];
 let livingSize = Math.floor(Math.random() * 300);
 
-let = randomize = (theArray) => Math.floor(Math.random() * theArray.length)
+let = randomize = (theArray) => Math.floor(Math.random() * theArray.length);
 
 let jobID = randomize(jobs);
 let locationID = randomize(locations);
