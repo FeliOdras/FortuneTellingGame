@@ -20,11 +20,13 @@ let kids = Math.floor(Math.random() * 10);
 let living = ['villa', 'condemonium', 'shack', 'cottage', 'cheap flat', 'box on the street', 'mansion', 'nice house']
 let livingSize = Math.floor(Math.random() * 300);
 
-let jobID = Math.floor(Math.random() * jobs.length);
-let locationID = Math.floor(Math.random() * locations.length);
-let partnerID = Math.floor(Math.random() * partners.length);
-let livingID = Math.floor(Math.random() * living.length);
+let = randomize = (theArray) => Math.floor(Math.random() * theArray.length)
 
-let fortuneTelling3 = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${kids==0 ? 'no' : kids} ${kids==1 ? 'child' : 'children' } .`;
+let jobID = randomize(jobs);
+let locationID = randomize(locations);
+let partnerID = randomize(partners);
+let livingID = randomize(living);
 
-document.getElementById("schicksal").innerHTML = fortuneTelling3(kids, partners[partnerID], locations[locationID], jobs[jobID], living[livingID], livingSize)
+let tellFortune = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${numOfChildren==0 ? 'no' : numOfChildren} ${numOfChildren==1 ? 'child' : 'children' } .`;
+
+document.getElementById("schicksal").innerHTML = tellFortune(kids, partners[partnerID], locations[locationID], jobs[jobID], living[livingID], livingSize)
