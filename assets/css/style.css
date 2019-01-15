@@ -1,4 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Major+Mono+Display");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
+
+body {
+  font-family: 'Major Mono Display', monospace; }
+
+body {
+  background-color: #000;
+  color: #963f44; }
+
+.frontpage {
+  text-align: center; }
+  .frontpage img {
+    width: 300px;
+    max-width: 100%; }
