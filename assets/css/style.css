@@ -7,9 +7,21 @@
 body {
   font-family: 'Major Mono Display', monospace; }
 
+:root {
+  font-size: 16px; }
+
 body {
   background-color: #000;
-  color: #963f44; }
+  color: #FFF2F2; }
+
+header {
+  text-align: center;
+  padding: 20px 10px;
+  font-weight: normal;
+  font-size: 1.5rem; }
+  header h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #C40003; }
 
 .frontpage {
   text-align: center; }
