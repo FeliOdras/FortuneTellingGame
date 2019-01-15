@@ -14,6 +14,9 @@ body {
   background-color: #000;
   color: #FFF2F2; }
 
+a {
+  text-decoration: none; }
+
 header {
   text-align: center;
   padding: 20px 10px;
@@ -28,3 +31,9 @@ header {
   .frontpage img {
     width: 300px;
     max-width: 100%; }
+  .frontpage .button {
+    color: #FFF2F2;
+    background-color: #870002;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0; }
