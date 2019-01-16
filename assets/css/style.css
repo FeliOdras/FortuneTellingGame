@@ -55,3 +55,14 @@ header {
     transiton: all .5s; }
     .frontpage button:hover {
       font-size: .9rem; }
+
+footer {
+  background-color: #870002;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: .7rem;
+  text-align: center; }
+  footer a {
+    color: #fff; }
