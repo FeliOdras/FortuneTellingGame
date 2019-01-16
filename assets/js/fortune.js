@@ -11,24 +11,26 @@ let kindOfHouse = prompt('What kind of house will you live in?', 'condomonium');
 let fortuneTelling2 = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse}. You will have ${numOfChildren} children.`;
 console.log(fortuneTelling2(numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse));*/
 
+function fortuneTeller() {
+    // randomized output through arrays
+    let jobs = ['software developer', 'doctor', 'drug dealer', 'barkeeper', 'delivery boy', 'rockstar', 'archeologist', 'clown', 'martial arts trainer'];
+    let locations = ['Germany', 'Japan', 'Sweden', 'United States of America', 'China', 'Brasil', 'Egypt', 'every place in the world'];
+    let partners = ['a loving partner', 'a witch', 'a dragon', 'an aweful person', 'an alien', 'a god', 'a zombie', 'a hero'];
+    let kids = Math.floor(Math.random() * 10);
+    let living = ['villa', 'condemonium', 'shack', 'cottage', 'cheap flat', 'box on the street', 'mansion', 'nice house'];
+    let livingSize = Math.floor(Math.random() * 300);
 
-// randomized output through arrays
-let jobs = ['software developer', 'doctor', 'drug dealer', 'barkeeper', 'delivery boy', 'rockstar', 'archeologist', 'clown', 'martial arts trainer'];
-let locations = ['Germany', 'Japan', 'Sweden', 'United States of America', 'China', 'Brasil', 'Egypt', 'every place in the world'];
-let partners = ['a loving partner', 'a witch', 'a dragon', 'an aweful person', 'an alien', 'a god', 'a zombie', 'a hero'];
-let kids = Math.floor(Math.random() * 10);
-let living = ['villa', 'condemonium', 'shack', 'cottage', 'cheap flat', 'box on the street', 'mansion', 'nice house'];
-let livingSize = Math.floor(Math.random() * 300);
+    let = randomize = (theArray) => Math.floor(Math.random() * theArray.length);
 
-let = randomize = (theArray) => Math.floor(Math.random() * theArray.length);
+    let jobID = randomize(jobs);
+    let locationID = randomize(locations);
+    let partnerID = randomize(partners);
+    let livingID = randomize(living);
 
-let jobID = randomize(jobs);
-let locationID = randomize(locations);
-let partnerID = randomize(partners);
-let livingID = randomize(living);
-
-let tellFortune = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${numOfChildren===0 ? 'no children' 
+    let tellFortune = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${numOfChildren===0 ? 'no children' 
 : numOfChildren==1 ? 'one child'
 : numOfChildren+' children'}.`;
 
-document.getElementById("schicksal").innerHTML = tellFortune(kids, partners[partnerID], locations[locationID], jobs[jobID], living[livingID], livingSize);
+    document.getElementById("schicksal").innerHTML = tellFortune(kids, partners[partnerID], locations[locationID], jobs[jobID], living[livingID], livingSize);
+    document.getElementById("tellMyFortune").innerHTML = '<button onclick="fortuneTeller()" class="button">I do not like my destiny. <br />Give me another one</button>'
+}

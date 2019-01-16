@@ -27,13 +27,21 @@ header {
     color: #C40003; }
 
 .frontpage {
-  text-align: center; }
+  text-align: center;
+  line-height: 160%; }
   .frontpage img {
     width: 300px;
     max-width: 100%; }
-  .frontpage .button {
+  .frontpage button {
     color: #FFF2F2;
     background-color: #870002;
     padding: 10px;
     border-radius: 5px;
-    margin: 20px 0; }
+    margin: 20px 0;
+    font-family: 'Major Mono Display', monospace;
+    font-weight: bold;
+    border: none;
+    line-height: 160%;
+    transiton: all .5s; }
+    .frontpage button:hover {
+      font-size: .9rem; }

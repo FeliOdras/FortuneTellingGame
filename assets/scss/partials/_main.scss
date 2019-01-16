@@ -1,16 +1,26 @@
 .frontpage {
     text-align: center;
+    line-height: 160%;
 
     img {
         width: 300px;
         max-width: 100%;
     }
 
-    .button {
+    button {
         color: #FFF2F2;
         background-color: #870002;
         padding: 10px;
         border-radius: 5px;
         margin: 20px 0;
+        font-family: 'Major Mono Display', monospace;
+        font-weight: bold;
+        border: none;
+        line-height: 160%;
+        transiton: all .5s;
+
+        &:hover {
+            font-size: .9rem;
+        }
     }
 }
