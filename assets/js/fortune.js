@@ -13,7 +13,7 @@ console.log(fortuneTelling2(numOfChildren, yourPartner, geoLocation, jobTitle, k
 
 function fortuneTeller() {
     // randomized output through arrays
-    let jobs = ['software developer', 'doctor', 'drug dealer', 'barkeeper', 'delivery boy', 'rockstar', 'archeologist', 'clown', 'martial arts trainer'];
+    let jobs = ['software developer', 'doctor', 'drug dealer', 'barkeeper', 'delivery boy', 'rockstar', 'archeologist', 'clown', 'martial arts trainer', 'drug dealer'];
     let locations = ['Germany', 'Japan', 'Sweden', 'United States of America', 'China', 'Brasil', 'Egypt', 'every place in the world'];
     let partners = ['a loving partner', 'a witch', 'a dragon', 'an aweful person', 'an alien', 'a god', 'a zombie', 'a hero'];
     let kids = Math.floor(Math.random() * 10);
@@ -27,9 +27,9 @@ function fortuneTeller() {
     let partnerID = randomize(partners);
     let livingID = randomize(living);
 
-    let tellFortune = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${numOfChildren===0 ? 'no children' 
+    let tellFortune = (numOfChildren, yourPartner, geoLocation, jobTitle, kindOfHouse, houseSize) => `<div class="inner"><h2>Your fortune</h2>You will be ${jobTitle} in ${geoLocation}. You will live with ${yourPartner} in a ${kindOfHouse} of ${houseSize} sqm. You will have ${numOfChildren===0 ? 'no children' 
 : numOfChildren==1 ? 'one child'
-: numOfChildren+' children'}.`;
+: numOfChildren+' children'}.</div>`;
 
     document.getElementById("schicksal").innerHTML = tellFortune(kids, partners[partnerID], locations[locationID], jobs[jobID], living[livingID], livingSize);
     document.getElementById("tellMyFortune").innerHTML = '<button onclick="fortuneTeller()" class="button">I do not like my destiny. <br />Give me another one</button>'

@@ -32,6 +32,16 @@ header {
   .frontpage img {
     width: 300px;
     max-width: 100%; }
+  .frontpage #schicksal .inner {
+    max-width: 90%;
+    margin: auto;
+    width: 500px;
+    color: #000;
+    background-color: #d1c0c0;
+    padding: 10px; }
+    .frontpage #schicksal .inner h2 {
+      color: #870002;
+      padding-bottom: 10px; }
   .frontpage button {
     color: #FFF2F2;
     background-color: #870002;
